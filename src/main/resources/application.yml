@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+
+spotify:
+  OAuth2:
+    client_id: f2ae952f4abb4ce5a6b3dfc4559d1e95
+    client_secret: 3d56200b6eee4443a5bbb6033f4cfa59
+    redirect_uri: http://localhost:8080/callback
+    authorization_uri: https://accounts.spotify.com/authorize
+    token_uri: https://accounts.spotify.com/api/token
+    scope: user-library-read
+    user_info_uri: https://api.spotify.com/v1/me/tracks
+
+
+

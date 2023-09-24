@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>top</title>
+</head>
+<body>
+
+<div th:fragment="content" th:align="center">
+    <h1>Top Artists</h1>
+    <table>
+        <tr>
+            <th>Artist</th>
+            <th>count</th>
+        </tr>
+        <tr th:each="artist : ${artists}">
+            <td th:text="${artist.name}"></td>
+            <td th:text="${artist.count}"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
